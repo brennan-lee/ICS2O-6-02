@@ -10,14 +10,15 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-PWA-Test/sw.js", {
-    scope: "/ICS2O-PWA-Test/",
+  navigator.serviceWorker.register("/ICS2O-6-02/sw.js", {
+    scope: "/ICS2O-6-02/",
   })
 }
 
-/**
- * This function displays an alert.
- */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+if ( localStorage.hits) {
+  localStorage.hits = Number(localStorage.hits) +1
 }
+else{
+  localStorage.hits = 1
+}
+document.write("Total Hits :" + localStorage.hits )
