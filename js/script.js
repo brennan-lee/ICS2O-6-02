@@ -15,10 +15,9 @@ if (navigator.serviceWorker) {
   })
 }
 
-if ( localStorage.hits) {
-  localStorage.hits = Number(localStorage.hits) +1
-}
-else{
+if (localStorage.hits) {
+  localStorage.hits = Number(localStorage.hits) + 1
+} else {
   localStorage.hits = 1
 }
-document.write("Total Hits :" + localStorage.hits )
+document.write("Total Hits :" + localStorage.hits)
