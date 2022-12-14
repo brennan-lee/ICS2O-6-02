@@ -22,7 +22,6 @@ function cookiePoint() {
   } else {
     localStorage.howManyTimesClickedTheCookie = 1
   }
-  document.getElementById("hits").innerHTML = (
+  document.getElementById("hits").innerHTML =
     "Total Hits :" + localStorage.howManyTimesClickedTheCookie
-  )
 }
