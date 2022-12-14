@@ -1,7 +1,7 @@
-// Copyright (c) 2020 Mr. Coxall All rights reserved
+// Copyright (c) 2022 Brennan lee All rights reserved
 //
-// Created by: Mr. Coxall
-// Created on: Sep 2020
+// Created by: Brennan Lee
+// Created on: dec 2022
 // This file contains the JS functions for index.html
 
 "use strict"
@@ -15,9 +15,10 @@ if (navigator.serviceWorker) {
   })
 }
 
-if (localStorage.onclick) {
-  localStorage.onclick = Number(localStorage.onclick) + 1
-} else {
+if ( localStorage.onclick) {
+  localStorage.onclick = Number(localStorage.onclick) +1
+}
+else{
   localStorage.onclick = 1
 }
-document.write("Total Hits :" + localStorage.onclick)
+document.write("Total Hits :" + localStorage.onclick )
