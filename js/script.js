@@ -16,11 +16,13 @@ if (navigator.serviceWorker) {
 }
 
 function cookiePoint() {
-  if ( localStorage.howManyTimesClickedTheCookie) {
-    localStorage.howManyTimesClickedTheCookie = Number(localStorage.howManyTimesClickedTheCookie) +1
-  }
-  else{
+  if (localStorage.howManyTimesClickedTheCookie) {
+    localStorage.howManyTimesClickedTheCookie =
+      Number(localStorage.howManyTimesClickedTheCookie) + 1
+  } else {
     localStorage.howManyTimesClickedTheCookie = 1
   }
-  document.getElementById("hits")  ("Total Hits :" + localStorage.howManyTimesClickedTheCookie) 
+  document.getElementById("hits")(
+    "Total Hits :" + localStorage.howManyTimesClickedTheCookie
+  )
 }
