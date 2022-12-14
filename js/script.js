@@ -15,11 +15,12 @@ if (navigator.serviceWorker) {
   })
 }
 
-function onclick() {
-  if (localStorage.onclick) {
-    localStorage.onclick = Number(localStorage.onclick) + 1
-  } else {
-    localStorage.onclick = 1
+function cookiePoint() {
+  if ( localStorage.howManyTimesClickedTheCookie) {
+    localStorage.howManyTimesClickedTheCookie = Number(localStorage.howManyTimesClickedTheCookie) +1
   }
-  document.write("Total Hits :" + localStorage.onclick)
+  else{
+    localStorage.howManyTimesClickedTheCookie = 1
+  }
+  document.getElementById("hits")  ("Total Hits :" + localStorage.howManyTimesClickedTheCookie) 
 }
