@@ -16,11 +16,10 @@ if (navigator.serviceWorker) {
 }
 
 function onclick() {
-if ( localStorage.onclick) {
-  localStorage.onclick = Number(localStorage.onclick) +1
-}
-else{
-  localStorage.onclick = 1
-}
-document.write("Total Hits :" + localStorage.onclick) 
+  if (localStorage.onclick) {
+    localStorage.onclick = Number(localStorage.onclick) + 1
+  } else {
+    localStorage.onclick = 1
+  }
+  document.write("Total Hits :" + localStorage.onclick)
 }
